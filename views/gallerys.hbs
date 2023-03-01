@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    {{>navbar data=details}}
+
+    {{!-- <h1>THIS IS GALLERY SECTION HERE YOU CAN SEE IMAGES OF OUR ACHIVMENT AND COURSE RELATED PIC</h1> --}}
+
+    <section id="service_sec" class="py-3 ">
+        <div class="container " id="section_bac">
+
+            <h1 class="text-center text-dark">OUR ACHIVMENTS</h1>
+            <div class="row mt-6">
+
+                {{!-- FIRST ACCHIVEMENT --}}
+
+                <div class=" col-md-4 ">
+
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="container text-center py-2">
+                                {{!-- <i class="{{this.icon}} service_icon"></i> --}}
+                                <img src="/static/images/g1.webp" style="height: 300px  ; " />
+                            </div>
+                            <h4 class="card-title ">ACHIVMENT 1</h4>
+                            <p class="overflow: auto">In this section we have our ACHIVMENT</p>
+                            {{!-- <a href="{{this.link}}">{{this.linkText}}</a> --}}
+                            <a href="#!" class="ml-4">Support</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                {{!-- SECOND ACHIVMENT --}}
+
+                <div class=" col-md-4 ">
+
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="container text-center py-2">
+                                {{!-- <i class="{{this.icon}} service_icon"></i> --}}
+                                <img src="/static/images/g1.webp" style="height: 300px; " />
+                            </div>
+                            <h4 class="card-title ">ACHIVMENT 2</h4>
+                            <p class="overflow: auto">In this section we have our ACHIVMENT</p>
+                            {{!-- <a href="{{this.link}}">{{this.linkText}}</a> --}}
+                            <a href="#!" class="ml-4">Support</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    {{!-- {{>gallerys gallery=gallery}} --}}
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
